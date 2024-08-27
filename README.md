@@ -43,8 +43,8 @@ If you are implementign this authentication on mobiles that do not support cooki
 - Avoid the need for third-party CORS implementation during authentication and have the flexibility to customize the code according to your requirements.
 
 <p float="center">
-  <img src="https://github.com/HexaEightTeam/integrations-javascript//blob/main/face-authentication.png?raw=true" width="250" />
-  <img src="https://github.com/HexaEightTeam/integrations-javascript//blob/main/email-authentication.png?raw=true" width="250" /> 
+  <img src="https://github.com/HexaEightTeam/integrations-javascript//blob/main/face-authentication.png?raw=true" width="300" />
+  <img src="https://github.com/HexaEightTeam/integrations-javascript//blob/main/email-authentication.png?raw=true" width="300" /> 
 </p>
 
 
