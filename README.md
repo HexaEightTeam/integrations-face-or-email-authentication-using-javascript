@@ -45,4 +45,6 @@ If you are implementign this authentication on mobiles that do not support cooki
 
 ![Face Authentication](https://github.com/HexaEightTeam/integrations-javascript//blob/main/face-authentication.png?raw=true)
 
+![EMail Authentication](https://github.com/HexaEightTeam/integrations-javascript//blob/main/email-authentication.png?raw=true)
+
 
