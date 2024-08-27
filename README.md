@@ -36,11 +36,11 @@ If you are implementign this authentication on mobiles that do not support cooki
 
 ### Benefits:
 
-a) Bypass the need for user registration and email verification procedures. 
-b) Eliminate the necessity to store user data and passwords, and validate any email. 
-c) Utilize the built-in authorization feature to accept emails from any domain. 
-d) Benefit from unlimited user authentication (with HexaEight Token Server licensed per CPU), leading to cost savings. 
-e) Avoid the need for third-party CORS implementation during authentication and have the flexibility to customize the code according to your requirements.
+- a) Bypass the need for user registration and email verification procedures.
+- b) Eliminate the necessity to store user data and passwords, and validate any email. 
+- c) Utilize the built-in authorization feature to accept emails from any domain. 
+- d) Benefit from unlimited user authentication (with HexaEight Token Server licensed per CPU), leading to cost savings. 
+- e) Avoid the need for third-party CORS implementation during authentication and have the flexibility to customize the code according to your requirements.
 
 
 
