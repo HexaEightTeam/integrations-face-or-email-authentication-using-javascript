@@ -43,4 +43,6 @@ If you are implementign this authentication on mobiles that do not support cooki
 - Avoid the need for third-party CORS implementation during authentication and have the flexibility to customize the code according to your requirements.
 
 
+![Face Authentication](https://github.com/HexaEightTeam/integrations-javascript//blob/main/face-authentication.png?raw=true)
+
 
