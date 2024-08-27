@@ -42,9 +42,10 @@ If you are implementign this authentication on mobiles that do not support cooki
 - Benefit from unlimited user authentication (with HexaEight Token Server licensed per CPU), leading to cost savings. 
 - Avoid the need for third-party CORS implementation during authentication and have the flexibility to customize the code according to your requirements.
 
+<p float="left">
+  <img src="https://github.com/HexaEightTeam/integrations-javascript//blob/main/face-authentication.png?raw=true" width="100" />
+  <img src="https://github.com/HexaEightTeam/integrations-javascript//blob/main/email-authentication.png?raw=true" width="100" /> 
+</p>
 
-![Face Authentication](https://github.com/HexaEightTeam/integrations-javascript//blob/main/face-authentication.png?raw=true)
-
-![EMail Authentication](https://github.com/HexaEightTeam/integrations-javascript//blob/main/email-authentication.png?raw=true)
 
 
