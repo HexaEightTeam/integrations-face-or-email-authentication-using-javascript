@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>
+  <!-- Link to Google Fonts for the Ubuntu font -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <!-- Meta tag to ensure proper rendering and touch zooming on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Title of the webpage -->
+  <title>Face Login</title>
+  <!-- CSS styles for the webpage -->
+  <style>
+    body {
+      background-color: #F3EBF6;
+      font-family: 'Ubuntu', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .main {
+      background-color: #FFFFFF;
+      width: 400px;
+      height: 600px;
+      border-radius: 1.5em;
+      box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .sign {
+      color: #8C55AA;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+
+    .status,
+    .un,
+    .pass {
+      width: 100%;
+      color: rgb(38, 50, 56);
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 1px;
+      background: rgba(136, 126, 126, 0.04);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      outline: none;
+      box-sizing: border-box;
+      border: 2px solid rgba(0, 0, 0, 0.02);
+      margin-bottom: 27px;
+      text-align: center;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    form.form1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #Video {
+      width: 200px;
+      /* This ensures the video doesn't exceed its container */
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      object-fit: "contain";
+    }
+
+    #capturedImage {
+      width: 200px;
+      /* This ensures the video doesn't exceed its container */
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      object-fit: "contain";
+    }
+
+    .un:focus,
+    .pass:focus {
+      border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    }
+
+    .submit {
+      cursor: pointer;
+      border-radius: 5em;
+      color: #fff;
+      background: linear-gradient(to right, #9C27B0, #E040FB);
+      border: 0;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 13px;
+      box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+      width: 80%;
+      /* Adjusted width to match password field */
+      text-align: center;
+      margin: 0 auto;
+      /* Center the button */
+    }
+
+    .forgot {
+      text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+      color: #E1BEE7;
+      padding-top: 15px;
+    }
+
+    a {
+      text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+      color: #E1BEE7;
+      text-decoration: none
+    }
+
+    @media (max-width: 600px) {
+      .main {
+        border-radius: 0px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Main container for the login form -->
+  <div class="main">
+    <!-- Title of the form -->
+    <p class="sign" align="center">Sign in</p>
+    <!-- The login form -->
+    <form class="form1" id="submitForm">
+      <!-- Input field for the user's email -->
+      <input class="un" type="email" id="email" align="center" placeholder="Email">
+      <!-- Button to generate the session code -->
+      <button class="submit" id="generate" align="center">Generate Session Code</button>
+      <!-- Input field for the session code -->
+      <input class="pass" id="sessioncode" align="center" placeholder="Session Code" maxlength="5" style="font-size: 15px;">
+      <!-- Input field for the one-time access code -->
+      <input class="pass" id="accesscode" type="password" align="center" placeholder="One Time Access Code" maxlength="5" style="font-size: 10px;">
+      <!-- Button to submit the form and sign in -->
+      <button class="submit" id="loginbutton" align="center">Sign in</button>
+      <!-- Div to display the status of the login attempt -->
+      <div id='status'></div>
+    </form>
+  </div>
+  <!-- Link to the JavaScript file -->
+  <script src="main2.js"></script>
+</body>
+</html>

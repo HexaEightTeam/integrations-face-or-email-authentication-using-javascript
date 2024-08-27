@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<head>
+    <!-- Link to the Ubuntu font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <!-- Set the viewport to scale to the device width, initial scale 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Set the title of the webpage -->
+    <title>Face Login</title>
+    <style>
+         /* Set the body style */
+         body {
+          background-color: #F3EBF6;
+          font-family: 'Ubuntu', sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+      }
+      
+      /* Set the main div style */
+      .main {
+          background-color: #FFFFFF;
+          width: 400px;
+          height: 600px;
+          border-radius: 1.5em;
+          box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+      }
+      
+      /* Set the sign in text style */
+      .sign {
+          color: #8C55AA;
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: bold;
+          font-size: 23px;
+          margin-bottom: 20px;
+      }
+      
+      /* Set the style for status, username and password fields */
+      .status, .un, .pass {
+      width: 100%;
+      color: rgb(38, 50, 56);
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 1px;
+      background: rgba(136, 126, 126, 0.04);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      outline: none;
+      box-sizing: border-box;
+      border: 2px solid rgba(0, 0, 0, 0.02);
+      margin-bottom: 27px;
+      text-align: center;
+      font-family: 'Ubuntu', sans-serif;
+      }
+      
+      /* Set the form style */
+      form.form1 {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      
+      /* Set the video style */
+      #Video {
+        width: 200px; /* This ensures the video doesn't exceed its container */
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        object-fit: "contain";
+      }
+  
+      /* Set the captured image style */
+      #capturedImage {
+        width: 200px; /* This ensures the video doesn't exceed its container */
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        object-fit : "contain";
+      }
+     
+      /* Set the focus style for username and password fields */
+      .un:focus, .pass:focus {
+          border: 2px solid rgba(0, 0, 0, 0.18) !important;
+      }
+      
+      /* Set the submit button style */
+      .submit {
+      cursor: pointer;
+      border-radius: 5em;
+      color: #fff;
+      background: linear-gradient(to right, #9C27B0, #E040FB);
+      border: 0;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 13px;
+      box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+      width: 80%; /* Adjusted width to match password field */
+      text-align: center;
+      margin: 0 auto; /* Center the button */
+  }
+      
+      /* Set the forgot password text style */
+      .forgot {
+          text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+          color: #E1BEE7;
+          padding-top: 15px;
+      }
+      
+      /* Set the link style */
+      a {
+          text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+          color: #E1BEE7;
+          text-decoration: none
+      }
+      
+      /* Set the style for devices with max width of 600px */
+      @media (max-width: 600px) {
+          .main {
+              border-radius: 0px;
+          }
+      }
+          
+</style>
+  </head>
+<body>
+  <!-- Main div that contains the form -->
+  <div class="main">
+    <!-- Sign in text -->
+    <p class="sign" align="center">Sign in</p>
+    <!-- Form for login -->
+    <form class="form1" id="submitForm">
+        <!-- Video element for face capture -->
+        <video class="Video" id='Video' autoplay></video>
+        <!-- Image element for displaying captured image -->
+        <img class="capturedImage" id='capturedImage' /> <!-- New image element -->
+        <!-- Input field for session code -->
+        <input class="pass" id="sessioncode" align="center" placeholder="Session Code" maxlength="5" style="font-size: 15px;">
+        <!-- Input field for one time access code -->
+        <input class="pass" id="accesscode" type="password" align="center" placeholder="One Time Access Code" maxlength="5" style="font-size: 10px;">
+        <!-- Submit button for the form -->
+        <button class="submit" id="loginbutton" align="center">Sign in</button>
+        <!-- Div for displaying status -->
+        <div id='status'></div>
+        </form>        
+   </div>
+     
+<!-- Include the face-api library -->
+<script src="/face-api/face-api.min.js"></script>
+<!-- Include the face capture script -->
+<script src="hefacecapture.js"></script>
+<!-- Include the main script -->
+<script src="main.js"></script>
+    
+</body>
+</html>
