@@ -29,7 +29,7 @@ If you are implementign this authentication on mobiles that do not support cooki
 3. Set the environment variable SECRET for your JWT
 4. Set the environment variable TOKENSERVER_PORT to point to the HexaEight Token Server 
 5. Set the environment variable TOKENSERVER_LOCATION to point to the directory where HexaEight Token Server is currently runnning. 
-6. Start the server using npm start
+6. Start the server using npx nodemon server\server.js
 7. Open login.html or loginviaemail.html in your browser to start the authentication process
 8. Use HexaEight Authenticator to obtain your access code to login to the application.
 
