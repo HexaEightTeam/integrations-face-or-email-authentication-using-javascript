@@ -1,6 +1,5 @@
-# Integration - JavaScript Authentication using HexaEight Token Server
-#### Vanilla Javascript Implementation With Face Authentication and EMail Authentication
-
+# Vanilla Javascript Implementation With Face Authentication and EMail Authentication
+#### Integration - JavaScript Authentication using HexaEight Token Server
 This repository contains a JavaScript implementation of authentication using HexaEight Token Server. The code implements JWT 
 
 ```
