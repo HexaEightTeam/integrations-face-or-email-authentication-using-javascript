@@ -102,7 +102,7 @@ module.exports = (app) => {
                 const doublehashedSessionCode = doublehashSessionCode(sessionCode);
                 const fileContent = 'P:::' + response.data;
 
-                fs.writeFileSync(`${TOKENSERVER_LOCATION}/LOCALCACHE/${doublehashedSessionCode}`, fileContent);
+                fs.writeFileSync(`${TOKENSERVER_LOCATION}/localcache/${doublehashedSessionCode}`, fileContent);
 
                 res.json({ sessionCode: sessionCode });
             } else {
