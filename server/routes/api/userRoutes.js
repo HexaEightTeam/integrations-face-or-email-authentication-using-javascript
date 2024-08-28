@@ -124,7 +124,7 @@ module.exports = (app) => {
             const doublehashedSessionCode = doublehashSessionCode(sessionCode);
             const fileContent = 'H:::' + hashemail;
 
-            fs.writeFileSync(`${TOKENSERVER_LOCATION}/LOCALCACHE/${doublehashedSessionCode}`, fileContent);
+            fs.writeFileSync(`${TOKENSERVER_LOCATION}/localcache/${doublehashedSessionCode}`, fileContent);
 
             res.json({ sessionCode: sessionCode });
         } catch (error) {
