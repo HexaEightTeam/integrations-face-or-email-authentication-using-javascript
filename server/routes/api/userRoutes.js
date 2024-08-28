@@ -1,7 +1,7 @@
 // Importing required modules
 const jwt = require('jsonwebtoken'); // Used for creating and verifying JSON Web Tokens
-const TOKEN_SERVER_URL_PORT = "5000"; // Port where the token server is running
-const TOKENSERVER_LOCATION = "C:\\Data\\tokenissuer\\machinetoken"; // Location of the token issuer
+const TOKEN_SERVER_URL_PORT = process.env.TOKENSERVER_PORT; // Port where the token server is running
+const TOKENSERVER_LOCATION = process.env.TOKENSERVER_LOCATION; // Location of the token issuer
 const SECRETKEY = process.env.SECRETKEY; // Secret key for JWT, stored in environment variables
 const axios = require('axios'); // Used for making HTTP requests
 const crypto = require('crypto'); // Used for hashing and generating random bytes
