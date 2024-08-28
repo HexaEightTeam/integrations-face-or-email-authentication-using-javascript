@@ -7,12 +7,15 @@ Optional : HTTPS secure cookies can be enabled for session management.
 ```
 
 ## Files
-- login.html - Implements Face Authentication
+- login.html - Implements Face Authentication 
 - loginviaemail.html - Implements Email Authentication
 - postlogin.html and postlogin2.html - Redirects to a protected resource after successful authentication
 - main.js and main2.js - Main JavaScript files for the front-end
 - server.js - Main server file
 - userRoutes.js - Contains user-related routes
+
+## Limitations
+Face Authentication is currently supported only for HexaEight Token Server running on Windows Machines
 
 ## Requirements
 For this code to work, you need to activate HexaEight Token Server with a License on this same machine (localhost). 
